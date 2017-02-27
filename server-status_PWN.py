@@ -228,7 +228,7 @@ def output_to_file(output_data):
     Outputs identified URLs into a newline-delimited file.
     """
     try:
-        o_file = open(output, 'a')
+        o_file = open(output_path, 'a')
         o_file.write(str(output_data) + '\n')
         o_file.close()
     except Exception as e:
