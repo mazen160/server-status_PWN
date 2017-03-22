@@ -28,33 +28,33 @@ server-status PWN constantly requests and parse Apache server-status page for an
 It outputs the data in a SQLITE3 database, and includes an option for saving unique URLs in a newline-delimited file.
 
 
-##**Usage**##
+## **Usage** ##
 `python server-status_PWN.py --url 'http://example.com/server-status'`
 
 
-##**Why I created this?**##
+## **Why I created this?** ##
 * To prove the severity of having an exposed Apache server-status. 
 * `PoC || GO` supporter.
 * I needed an actual PoC exploit.
 
-#**Requirements**#
+# **Requirements** #
 * Python2 or Python3
 * requests
 * bs4
 
 
-##**Example Output**##
+## **Example Output** ##
 ![server-status_PWN Example Output](https://www.dropbox.com/s/rplstyr5lqlmxq5/server-status_PWN-Demo.png?dl=1)
 
 
-#**Legal Disclaimer**#
+# **Legal Disclaimer** #
 This project is made for educational and ethical testing purposes only. Usage of server-status_PWN for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 
-#**License**#
+# **License** #
 The project is licensed under MIT License.
 
-#**Author**#
+# **Author** #
 *Mazin Ahmed*
 * Website: [https://mazinahmed.net](https://mazinahmed.net)
 * Email: *mazin AT mazinahmed DOT net*
