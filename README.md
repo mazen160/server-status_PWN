@@ -44,7 +44,7 @@ It outputs the data in a SQLITE3 database, and includes an option for saving uni
 
 
 ## **Example Output** ##
-![server-status_PWN Example Output](https://www.dropbox.com/s/rplstyr5lqlmxq5/server-status_PWN-Demo.png?dl=1)
+![server-status_PWN Example Output](https://raw.githubusercontent.com/mazen160/public/master/static/images/server-status_PWN-Demo.png)
 
 
 # **Legal Disclaimer** #
