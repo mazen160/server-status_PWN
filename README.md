@@ -54,6 +54,9 @@ This project is made for educational and ethical testing purposes only. Usage of
 # **License** #
 The project is licensed under MIT License.
 
+### Note ###
+There are custom Apache server-status that would require a user to change table index values. If you're encountering errors related to this issue, refer to https://github.com/mazen160/server-status_PWN/issues/2.
+
 # **Author** #
 *Mazin Ahmed*
 * Website: [https://mazinahmed.net](https://mazinahmed.net)
