@@ -34,7 +34,7 @@ It outputs the data in a SQLITE3 database, and includes an option for saving uni
 
 ## **Why I created this?** ##
 * To prove the severity of having an exposed Apache server-status. 
-* `PoC || GO` supporter.
+* `PoC || GTFO` supporter.
 * I needed an actual PoC exploit.
 
 # **Requirements** #
