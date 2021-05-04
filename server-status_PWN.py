@@ -17,6 +17,7 @@ import time
 import sqlite3
 import calendar
 import argparse
+import sys
 
 # External modules
 import requests
@@ -316,7 +317,6 @@ def main(url, full_logging=False):
     error_limit = 20
     error_counter = 0
     while True:
-        print('%s[#] Requesting. %s' % (tcolor.light_blue, tcolor.endcolor))
         output = Request_Handler().send_request(url)
         validate_output = Response_Handler().validate_response(output)
         if validate_output is not True:
@@ -374,7 +374,12 @@ def main(url, full_logging=False):
                         Exception_Handler(e)
                     DBHandler().Add_Full_Log(Timestamp, IP_Address, VHOST, REQUEST_URI, FULL_URL)
 
-        time.sleep(int(sleeping_time))
+        st = int(sleeping_time)
+        while st != 0:
+            time.sleep(1)
+            sys.stdout.write("\033[34m New request in {0} secondes...\033[0m\r".format(st))
+            sys.stdout.flush()
+            st = st - 1
     return(0)
 
 
