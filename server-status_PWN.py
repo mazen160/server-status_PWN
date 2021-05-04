@@ -376,8 +376,9 @@ def main(url, full_logging=False):
 
         st = int(sleeping_time)
         while st != 0:
+            #Display second in real time one the on liner (not \n everytime)
             time.sleep(1)
-            sys.stdout.write("\033[34m New request in {0} secondes...\033[0m\r".format(st))
+            sys.stdout.write("\033[34m New request in {} secondes...\033[0m\r".format(st))
             sys.stdout.flush()
             st = st - 1
     return(0)
