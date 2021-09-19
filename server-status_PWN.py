@@ -17,7 +17,6 @@ import time
 import sqlite3
 import calendar
 import argparse
-import sys
 
 # External modules
 import requests
@@ -376,10 +375,11 @@ def main(url, full_logging=False):
 
         st = int(sleeping_time)
         while st != 0:
-            #Display second in real time one the on liner (not \n everytime)
+            # Display second in real time one the on liner (not \n everytime)
             time.sleep(1)
-            sys.stdout.write("\033[34m New request in {} secondes...\033[0m\r".format(st))
-            sys.stdout.flush()
+            print("\033[34m", end="")
+            print(f"New request in {st} seconds...", end="")
+            print("\033[0m\r", end="")
             st = st - 1
     return(0)
 
